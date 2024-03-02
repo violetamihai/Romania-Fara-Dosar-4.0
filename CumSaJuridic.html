@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <!-- footer start  -->
+  <title>Cum sa...</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+ <!-- footer end  -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navbar {
+  overflow: hidden;
+  
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover {
+  
+  /* border: 2px solid #84A6C9ff ;
+  border-radius: 18px; */
+  background-color: #f2f2f2;
+
+}
+
+.dropdown:hover .dropbtn{
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #84A6C9ff;
+  border:none;
+  border-radius: 0px;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.container_nav{
+    width: 100%;
+    min-height: 50vh;
+    padding: 0%;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+   
+
+}
+
+.search-bar{
+    width:100%;
+    max-width:700px;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+   margin: auto;
+    padding: 10px 20px;
+    border: 2px solid #84A6C9ff ;
+  border-radius: 18px;
+    
+ 
+
+}
+
+.search-bar input{
+    background:transparent;
+    flex: 1;
+    border:0;
+    outline: none;
+    padding: 24px 20px;
+    font-size:20px;
+    color:black;
+}
+
+::placeholder{
+    color: #cac7ff;
+}
+
+.search-bar button img{
+    width: 25px;
+
+}
+
+.search-bar button{
+    border: 0;
+    border-radius:50%;
+    width: 60px;
+    height: 60px;
+    background: #cac7ff;
+    cursor: pointer;
+}
+
+.search-bar button:hover{
+  background: #58629b;
+}
+
+
+
+/* footer start */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #051367;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: blue;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #5D8BF4;
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+/* footer end */
+/* acordeon start */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  margin-left:30px;
+   width:80%; 
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+
+  
+
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 30px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+/* acordeon end */
+</style>
+</head>
+<body style="background-color:white;">
+
+  <div class="navbar">
+    <a href="rfid.html">Vorbeste cu ION</a>
+    <a href="CumSaJuridic_EN.html">EN</a>
+    
+    <div class="dropdown">
+      <button class="dropbtn">Sunt persoana juridică
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Logare2.html">Informatii fiscale</a>
+        <a href="CumSaJuridic.html">Cum să...</a>
+        <a href="GhidulTaxelorsiImpozitelor.html">Ghidul taxelor si impozitelor</a>
+      </div>
+    </div> 
+  
+  
+    <div class="dropdown">
+      <button class="dropbtn">Sunt persoana fizică 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Logare.html">Actele mele</a>
+        <a href="CumSaFizic.html">Cum să...</a>
+        <a href="TaxeleMele.html">Taxele mele</a>
+        
+      </div>
+    </div> 
+  </div>
+
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+<br><br>
+<h4 style="margin-left: 30px;"> Proceduri dupa infiintarea unui SRL: </h4>
+    <br>
+<button class="accordion">Găsirea și contractarea unui contabil (sau a unei societăți de servicii de contabilitate) </button>
+<div class="panel" style="line-height: 2;">
+    
+  În cazul SRL-ului ai nevoie, în mod obligatoriu, de un contabil.
+
+Contabilul poate fi, de fapt, un prestator extern, ceea ce înseamnă că vei semna un contract de servicii de contabilitate cu o societate de expertiză contabilă sau cu un contabil care are forma de organizare a unui PFA, iar ei sau el/ ea, vor gestiona partea contabilă pentru tine, în schimbul plății acestor servicii.
+
+Acordă atenție sporită firmei de contabilitate sau profesionistului cu care dorești să stabilești colaborarea pentru partea contabilă. Asigură-te că sunteți pe aceeași lungime de undă și că aveți o bună comunicare și că îți înțelege afacerea.
+
+Nu uita să citești cu atenție și contractul ÎNAINTE de a-l semna.
+
+Ca să vezi exact ce va face și ce nu va face contabilul pentru SRL-ul tău.
+</div>
+
+<button class="accordion">Achiziția registrelor obligatorii pentru SRL-ul tău</button>
+<div class="panel" style="line-height: 2;">
+  Registrele obligatorii pentru SRL sunt:
+
+  <br>&#x2022;Registrul Inventar se poate ține și în format electronic, cu condiția să fie respectat modelul publicat în OMFP 170/2015, cod 14-1-2/b
+  <br> &#x2022; Registrul Unic de Control se cumpără de la ANAF
+  <br>&#x2022;Registrul Jurnal se poate ține și în format electronic, listat din programul de contabilitate
+  <br>&#x2022;Cartea Mare se poate ține și în format electronic, listat din programul de contabilitate
+     
+</div>
+
+<button class="accordion">Casă de marcat (dacă este cazul!)</button>
+<div class="panel" style="line-height: 2;">
+  Dacă SRL-ul tău se încadrează în lista business-urilor pentru care ai nevoie de casă de marcat, atunci trebuie să achiziționezi o casă de marcat.
+
+  Legea stabilește că îți trebuie casă de marcat dacă încasezi, integral sau parțial, cu numerar sau prin utilizarea cardurilor de credit/debit sau a substitutelor de numerar contravaloarea bunurilor livrate cu amănuntul, dar și dacă prestezi servicii direct către populație.
+  <br>
+  Cu toate acestea sunt și multe excepții, adică situații în care NU ai nevoie de casă de marcat.
+  <br>
+  Nu îți trebuie casă de marcat dacă:
+  <br>
+  <br>a) faci comerț ocazional cu produse agricole din producție proprie și ești producător agricol individual, autorizat prin piețe, târguri & altele
+  
+  <br>b) vinzi ziare și reviste prin distribuitori specializați
+  
+  <br>c) pentru bilete de acces la spectacole, muzee, expoziții, târguri și oboare, grădini zoologice și grădini botanice, biblioteci, locuri de parcare pentru autovehicule, bilete de participare la jocuri de noroc și altele similare
+  
+  <br>d) dacă faci asigurări (De viață, private, etc)
+  
+  <br>e) dacă ai o profesie liberală care nu implică înființarea unui SRL – spre exemplu medic, avocat, contabil etc.
+  
+  <br>f) faci servicii de instalații, reparații și întreținere a bunurilor, efectuate la domiciliul clientului
+  
+  <br>g) vinzi pachete de servicii turistice sau de componente ale acestora de către agențiile de turism
+  
+  <br>h) faci transport rutier internațional contra cost de persoane
+  
+  <br>
+  
+  Mai sunt și alte cazuri de excepție, când nu ai nevoie de casă de marcat, așa că verifică legea și/ sau consultă-te cu contabilul tău.
+  </div>
+
+<button class="accordion">Înregistrarea specială în scopuri de TVA (VIES), dacă cumperi sau vinzi în U.E.</button>
+<div class="panel" style="line-height: 2;">
+  Când trebuie să faci procedura de înregistrare specială în scopuri de TVA?
+  <br>
+  Când:
+  <br>
+   a) faci achiziții intracomunitare (din statele membre UE) de bunuri a căror valoare depășește plafonul de 10.000 euro (34.000 lei);
+  
+   <br>b) prestezi servicii care au locul în alt stat membru (din UE), dacă beneficiarul serviciului tău este plătitor de TVA
+  
+   <br>c)  achiziționezi un serviciu de la un prestator, care este persoană impozabilă stabilită în alt stat membru, servicii pentru care este obligată la plata taxei în România conform art. 307 alin. (2) din Codul fiscal;
+  
+   <br>d) ai statut de persoană impozabilă căruia i se aplică regimul pentru agricultor și faci livrări de bunuri la nivelul UE
+   <br>
+   
+  
+  Dacă ai obligația să te înregistrezi în scopuri speciale de TVA, această înregistrare trebuie făcută ÎNAINTE de a se efectua achizițiile / livrările / prestările.
+  
+  Înregistrarea specială în scopuri de TVA este o procedură simplă, pe care o vei urma la ANAF și în urma căreia vei obține un cod special (adică vei mai obține încă o hârtie cartonată, pe care vor apărea datele SRL-ului tău și noul cod).
+  
+  Acest cod special îl vei aplica pe facturile emise de tine pentru clienții tăi de la nivelul Uniunii Europene și este aplicat pe facturile emise de furnizorii tăi de la nivelul Uniunii Europene.
+  
+  Desigur, de aici vor mai apărea și alte obligații fiscale, dar aici te va îndruma și ajuta contabilul tău.
+  
+   </div>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+   <footer class="footer">
+    <div class="container">
+     <div class="row">
+       <div class="footer-col">
+         <h4>Despre proiect</h4>
+         <ul>
+           <li><a href="#">Motivatie</a></li>
+           <li><a href="#">Echipa noastra</a></li>
+          
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>Legal</h4>
+         <ul>
+           <li><a href="#">Termeni si conditii</a></li>
+           <li><a href="#">Confidentialitatea datelor</a></li>
+       
+         </ul>
+       </div>
+       
+       <div class="footer-col">
+         <h4>Social Media</h4>
+         <div class="social-links">
+           <a href="https://www.facebook.com/guv.ro/"><i class="fab fa-facebook-f"></i></a>
+          
+           <a href="https://www.instagram.com/guvern.ro/"><i class="fab fa-instagram"></i></a>
+           <a href="https://www.linkedin.com/company/guvernul-rom-niei/?originalSubdomain=ro"><i class="fab fa-linkedin-in"></i></a>
+         </div>
+       </div>
+     </div>
+    </div>
+ </footer>
+
+
+   <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+
+</body>
+</html>

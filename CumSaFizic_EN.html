@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <!-- footer start  -->
+  <title>How to ....</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+ <!-- footer end  -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navbar {
+  overflow: hidden;
+  
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover {
+  
+  /* border: 2px solid #84A6C9ff ;
+  border-radius: 18px; */
+  background-color: #f2f2f2;
+
+}
+
+.dropdown:hover .dropbtn{
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #84A6C9ff;
+  border:none;
+  border-radius: 0px;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.container_nav{
+    width: 100%;
+    min-height: 50vh;
+    padding: 0%;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+   
+
+}
+
+.search-bar{
+    width:100%;
+    max-width:700px;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+   margin: auto;
+    padding: 10px 20px;
+    border: 2px solid #84A6C9ff ;
+  border-radius: 18px;
+    
+ 
+
+}
+
+.search-bar input{
+    background:transparent;
+    flex: 1;
+    border:0;
+    outline: none;
+    padding: 24px 20px;
+    font-size:20px;
+    color:black;
+}
+
+::placeholder{
+    color: #cac7ff;
+}
+
+.search-bar button img{
+    width: 25px;
+
+}
+
+.search-bar button{
+    border: 0;
+    border-radius:50%;
+    width: 60px;
+    height: 60px;
+    background: #cac7ff;
+    cursor: pointer;
+}
+
+.search-bar button:hover{
+  background: #58629b;
+}
+
+
+
+/* footer start */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #051367;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: blue;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #5D8BF4;
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+/* footer end */
+
+/* acordeon start */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  margin-left:30px;
+   width:80%; 
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+
+  
+
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 30px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+/* acordeon end */
+</style>
+</head>
+<body style="background-color:white;">
+
+  <div class="navbar">
+    <a href="rfid_EN.html">Talk to JOHN</a>
+    <a href="CumSaFizic.html">RO</a>
+    
+    <div class="dropdown">
+        <button class="dropbtn">I am a legal person
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="Logare2_EN.html">Fiscal information</a>
+          <a href="CumSaJuridic_EN.html">How to ...</a>
+          <a href="GhidulTaxelorsiImpozitelor_EN.html">Guide to fees and taxes</a>
+        </div>
+      </div> 
+    
+    
+      <div class="dropdown">
+        <button class="dropbtn">I am a physical person 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="Logare_EN.html">My Documents</a>
+          <a href="CumSaFizic_EN.html">How to ...</a>
+          <a href="TaxeleMele_EN.html">My taxes</a>
+          
+        </div>
+      </div> 
+    </div>
+
+
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+<br><br>
+<h4 style="margin-left: 30px;"> Information regarding the issuance of the identity card: </h4>
+    <br>
+<button class="accordion">Documents required for the issuance of an identity card at the age of 14</button>
+<div class="panel" style="line-height: 2;">
+    
+    &#x2022;<a href="https://dpepsc.ps2.ro/attachments/article/5/Cerere%20eliberare%20act%20de%20identitate.pdf"> application form</a> for the issuance of the identity document, signed by both the minor and the parent/legal representative - it must be completed in CAPITAL LETTERS and must be printed on both sides.<br>
+    &#x2022; the original minor's birth certificate<br>
+    &#x2022; the identity document of one of the parents or the legal representative, original, document with which the proof of the home address is made<br>
+    &#x2022; the parents' marriage certificate or the divorce certificate accompanied by the parental consent/final/irrevocable court decision of divorce, as the case may be, in the case where the parents are divorced, original<br>
+    &#x2022; the document proving the payment of the value of the identity document<br>
+
+</div>
+
+<button class="accordion">Issuance of the identity document upon loss, theft, destruction or damage of the previously held identity document</button>
+<div class="panel" style="line-height: 2;">
+    &#x2022; standard application for the issuance of the identity document - it must be completed in CAPITAL LETTERS and it must be printed on both sides.
+    <br>&#x2022; the identity document, in case of damage;
+    <br>&#x2022; birth certificate, original;
+    <br>&#x2022; the marriage certificate, in the case of married persons or of the surviving spouse, original;
+    <br>&#x2022; the divorce certificate/court decision, final/irrevocable, as well as the notarial agreement regarding minor children (if applicable), in the original;
+    <br>&#x2022; the document proving the home address, the original or the extract from the land register, obtained no later than 30 days before the date of submission of the application;
+    <br>&#x2022; an official document with a recent photo - driver's license, original, or passport, original and copy of the tab with the applicant's image and data - for people who have not taken the facial image in the R.N.E.P.;
+    <br>&#x2022; the document proving the payment of the value of the identity document <br>
+     
+</div>
+
+<button class="accordion">Issuance of the identity document when the name of the street is changed or the buildings are renumbered</button>
+<div class="panel" style="line-height: 2;">
+    &#x2022; standard application for the issuance of the identity document - it must be completed in CAPITAL LETTERS and it must be printed on both sides.
+    <br>&#x2022; identity document;
+    <br>&#x2022; birth certificates, original;
+    <br>&#x2022; the marriage certificate, in the case of married persons or of the surviving spouse, original;
+    <br>&#x2022; the divorce certificate/court decision, final/irrevocable, as well as the notarial agreement regarding minor children (if applicable), in the original;
+    <br>&#x2022; the document proving the home address, the original or the extract from the land register, obtained no later than 30 days before the date of submission of the application;
+    <br>&#x2022; the document proving the payment of the value of the identity document</div>
+
+<button class="accordion">Issuance of the identity document upon: expiry of the validity period, modification of civil status data, cancellation of the document, change of gender or physiognomy</button>
+<div class="panel" style="line-height: 2;">
+    <br>&#x2022; the standard application for the issuance of the identity document - it must be completed in CAPITAL LETTERS and it must be printed on both sides.
+    <br>&#x2022; identity document;
+    <br>&#x2022; birth certificate, original;
+    <br>&#x2022; the marriage certificate, in the case of married persons or of the surviving spouse, original;
+    <br>&#x2022; the divorce certificate/court decision, final/irrevocable, as well as the notarial agreement regarding minor children (if applicable), in the original;
+    <br>&#x2022; the document proving the home address, the original or the extract from the land register, obtained no later than 30 days before the date of submission of the application;
+    <br>&#x2022; the document proving the payment of the value of the identity document. see TAXES</div>
+
+<button class="accordion">Issuance of the provisional identity card when citizens do not have all the necessary documents for the issuance of the identity card
+</button>
+<div class="panel" style="line-height: 2;">
+    <br>&#x2022; standard application for the issuance of the identity document - it must be completed in CAPITAL LETTERS and it must be printed on both sides.
+    <br>&#x2022; 2 photos 3x4 cm, based on a 7 mm white strip
+    <br>&#x2022; the documents he can present to prove his name, marital status, Romanian citizenship and domicile address (original): birth certificate, old identity document or a photo document
+    <br>&#x2022; the document proving the payment of the provisional ID card, in the amount of 1 leu, see TAXES
+</div>
+
+
+<br><br>
+
+<br><br><br><br><br><br><br><br><br><br>
+<footer class="footer">
+    <div class="container">
+     <div class="row">
+       <div class="footer-col">
+         <h4>About project</h4>
+         <ul>
+           <li><a href="#">Motivation</a></li>
+           <li><a href="#">Our team</a></li>
+          
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>Legal</h4>
+         <ul>
+           <li><a href="#">Terms of service</a></li>
+           <li><a href="#">Data confidentiality</a></li>
+       
+         </ul>
+       </div>
+       
+       <div class="footer-col">
+         <h4>Social Media</h4>
+         <div class="social-links">
+           <a href="https://www.facebook.com/guv.ro/"><i class="fab fa-facebook-f"></i></a>
+          
+           <a href="https://www.instagram.com/guvern.ro/"><i class="fab fa-instagram"></i></a>
+           <a href="https://www.linkedin.com/company/guvernul-rom-niei/?originalSubdomain=ro"><i class="fab fa-linkedin-in"></i></a>
+         </div>
+       </div>
+     </div>
+    </div>
+ </footer>
+
+
+   <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+
+</body>
+</html>

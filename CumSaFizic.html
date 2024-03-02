@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <!-- footer start  -->
+  <title>Cum sa...</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+ <!-- footer end  -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navbar {
+  overflow: hidden;
+  
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover {
+  
+  /* border: 2px solid #84A6C9ff ;
+  border-radius: 18px; */
+  background-color: #f2f2f2;
+
+}
+
+.dropdown:hover .dropbtn{
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #84A6C9ff;
+  border:none;
+  border-radius: 0px;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.container_nav{
+    width: 100%;
+    min-height: 50vh;
+    padding: 0%;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+   
+
+}
+
+.search-bar{
+    width:100%;
+    max-width:700px;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+   margin: auto;
+    padding: 10px 20px;
+    border: 2px solid #84A6C9ff ;
+  border-radius: 18px;
+    
+ 
+
+}
+
+.search-bar input{
+    background:transparent;
+    flex: 1;
+    border:0;
+    outline: none;
+    padding: 24px 20px;
+    font-size:20px;
+    color:black;
+}
+
+::placeholder{
+    color: #cac7ff;
+}
+
+.search-bar button img{
+    width: 25px;
+
+}
+
+.search-bar button{
+    border: 0;
+    border-radius:50%;
+    width: 60px;
+    height: 60px;
+    background: #cac7ff;
+    cursor: pointer;
+}
+
+.search-bar button:hover{
+  background: #58629b;
+}
+
+
+
+/* footer start */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #051367;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: blue;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #5D8BF4;
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+/* footer end */
+
+/* acordeon start */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  margin-left:30px;
+   width:80%; 
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+
+  
+
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 30px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+/* acordeon end */
+</style>
+</head>
+<body style="background-color:white;">
+
+  <div class="navbar">
+    <a href="rfid.html">Vorbeste cu ION</a>
+    <a href="CumSaFizic_EN.html">EN</a>
+    
+    <div class="dropdown">
+      <button class="dropbtn">Sunt persoana juridică
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Logare2.html">Informatii fiscale</a>
+        <a href="CumSaJuridic.html">Cum să...</a>
+        <a href="GhidulTaxelorsiImpozitelor.html">Ghidul taxelor si impozitelor</a>
+      </div>
+    </div> 
+  
+  
+    <div class="dropdown">
+      <button class="dropbtn">Sunt persoana fizică 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Logare.html">Actele mele</a>
+        <a href="CumSaFizic.html">Cum să...</a>
+        <a href="TaxeleMele.html">Taxele mele</a>
+        
+      </div>
+    </div> 
+  </div>
+
+
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+<br><br>
+<h4 style="margin-left: 30px;"> Informatii referitoare la eliberarea cartii de identitate: </h4>
+    <br>
+<button class="accordion">Acte necesare pentru eliberarea cartii de identitate la varsta de 14 ani</button>
+<div class="panel" style="line-height: 2;">
+    
+    &#x2022;<a href="https://dpepsc.ps2.ro/attachments/article/5/Cerere%20eliberare%20act%20de%20identitate.pdf"> cerere tip</a> pentru eliberarea actului de identitate, semnată atât de minor, cât şi de părinte/reprezentantul legal - se completează cu MAJUSCULE (LITERE DE TIPAR) şi se tipăreşte obligatoriu față-verso.<br>
+    &#x2022; certificatul de naștere al minorului original<br>
+    &#x2022; actul de identitate al unuia dintre părinţi sau al reprezentantului legal, original, document cu care se realizează și dovada adresei de domiciliu<br>
+    &#x2022; certificatul de căsătorie al părinţilor ori certificatul de divorţ însoţit de acordul parental/hotărârea judecătorească de divorţ definitivă/irevocabilă, după caz, în situaţia în care părinţii sunt divorţaţi, original<br>
+    &#x2022; documentul cu care face dovada achitării contravalorii actului de identitate<br>
+
+</div>
+
+<button class="accordion">Eliberarea actului de identitate la pierderea, furtul, distrugerea sau deteriorarea actului de identitate deţinut anterior</button>
+<div class="panel" style="line-height: 2;">
+    &#x2022; cerere tip  pentru eliberarea actului de identitate - se completează cu MAJUSCULE (LITERE DE TIPAR) şi se tipăreşte obligatoriu față-verso.
+    <br>&#x2022; actul de identitate, în cazul deteriorării;
+    <br>&#x2022; certificatul de naştere, original;
+    <br>&#x2022; certificatul de căsătorie, în cazul persoanelor căsătorite sau al soţului supravieţuitor, original;
+    <br>&#x2022; certificatul/hotărârea judecătorească de divorț, definitivă/irevocabilă, precum și convenția notarială cu privire la copiii minori (după caz), în original;
+    <br>&#x2022; documentul cu care se face dovada adresei de domiciliu, original sau extrasul de carte funciară, obţinut cu cel mult 30 de zile anterior datei depunerii cererii;
+    <br>&#x2022; un document oficial cu fotografie de dată recentă - permis de conducere, original, sau paşaport, original şi copia filei cu imaginea şi datele solicitantului -pentru persoanele care nu au preluată imaginea facială în R.N.E.P.;
+    <br>&#x2022; documentul cu care face dovada achitării contravalorii actului de identitate <br>
+     
+</div>
+
+<button class="accordion">Eliberarea actului de identitate la schimbarea denumirii străzii sau a renumerotării imobilelor</button>
+<div class="panel" style="line-height: 2;">
+    &#x2022; cerere tip pentru eliberarea actului de identitate - se completează cu MAJUSCULE (LITERE DE TIPAR) şi se tipăreşte obligatoriu față-verso.
+    <br>&#x2022; actul de identitate; 
+    <br>&#x2022; certificatele de naștere, original;
+    <br>&#x2022; certificatul de căsătorie, în cazul persoanelor căsătorite sau al soţului supravieţuitor, original;
+    <br>&#x2022; certificatul/hotărârea judecătorească de divorț, definitivă/irevocabilă, precum și convenția notarială cu privire la copiii minori (după caz), în original;
+    <br>&#x2022; documentul cu care se face dovada adresei de domiciliu, original sau extrasul de carte funciară, obţinut cu cel mult 30 de zile anterior datei depunerii cererii;
+    <br>&#x2022; documentul cu care face dovada achitării contravalorii actului de identitate</div>
+
+<button class="accordion">Eliberarea actului de identitate la: expirarea termenului de valabilitate, modificarea datelor de stare civilă, anularea documentului, schimbarea sexului sau a fizionomiei</button>
+<div class="panel" style="line-height: 2;">
+    <br>&#x2022; cererea tip pentru eliberarea actului de identitate - se completează cu MAJUSCULE (LITERE DE TIPAR) şi se tipăreşte obligatoriu față-verso.
+    <br>&#x2022; actul de identitate;
+    <br>&#x2022; certificatul de naştere, original;
+    <br>&#x2022; certificatul de căsătorie, în cazul persoanelor căsătorite sau al soţului supravieţuitor, original;
+    <br>&#x2022; certificatul/hotărârea judecătorească de divorț, definitivă/irevocabilă, precum și convenția notarială cu privire la copiii minori (după caz), în original;
+    <br>&#x2022; documentul cu care se face dovada adresei de domiciliu, original sau extrasul de carte funciară, obţinut cu cel mult 30 de zile anterior datei depunerii cererii;
+    <br>&#x2022; documentul cu care face dovada achitării contravalorii actului de identitate.  vezi TAXELE</div>
+
+<button class="accordion">Eliberarea cărţii de identitate provizorii atunci când cetățenii nu dețin toate actele necesare eliberării cărții de identitate
+</button>
+<div class="panel" style="line-height: 2;">
+    <br>&#x2022; cerere tip pentru eliberarea actului de identitate - se completează cu MAJUSCULE (LITERE DE TIPAR) şi se tipăreşte obligatoriu față-verso.
+    <br>&#x2022; 2 fotografii 3x4 cm, având la bază o bandă albă de 7 mm
+    <br>&#x2022; documentele pe care le poate prezenta pentru a face dovada numelui, stării civile, cetăţeniei române şi a adresei de domiciliu (original): certificatul de naştere, vechiul act de identitate sau un document cu fotografie
+    <br>&#x2022; documentul cu care face dovada achitării contravalorii cărții de identitate provizorie, în valoare de 1 leu,  vezi TAXELE
+</div>
+
+
+<br><br>
+<h4 style="margin-left: 30px;"> Informatii referitoare la eliberarea pasaportului: </h4>
+    <br>
+<button class="accordion">Acte necesare pentru eliberarea pasaportului pentru adult</button>
+<div class="panel" style="line-height: 2;">
+    
+    <br>&#x2022; Cartea de identitate, cartea de identitate provizorie sau, după caz, buletinul de identitate, aflate în termen de valabilitate, în original. Cartea de identitate provizorie trebuie însoţită de certificatul de naştere, în original.
+
+    <br>&#x2022; Documentul care face dovada achitării contravalorii pașaportului, în original, sau documentul de plată/dovada tranzacției, editat(ă) pe suport hârtie sau în format electronic, care conține numărul tranzacției și datele persoanei pe numele căreia se solicită eliberarea documentului de călătorie (nume, prenume, CNP), precum și suma achitată, aferentă tipului de pașaport solicitat.
+    
+    <br>&#x2022; Paşaportul anterior, dacă acesta există.
+
+</div>
+
+<button class="accordion">Acte necesare pentru eliberarea pasaportului pentru un minor sub 14 ani</button>
+<div class="panel" style="line-height: 2;">
+    
+    <br>&#x2022; Certificatul de naştere al minorului, în original.
+
+    <br>&#x2022; Document/documente de identitate al părintelui/ale parinţilor, al reprezentantului legal sau, după caz, al persoanei împuternicite, aflate în termen de valabilitate, în original.
+    
+    <br>&#x2022; Documentul care face dovada achitării contravalorii pașaportului, în original, sau documentul de plată/dovada tranzacției, editat(ă) pe suport hârtie sau în format electronic, care conține numărul tranzacției și datele persoanei pe numele căreia se solicită eliberarea documentului de călătorie (nume, prenume, CNP), precum și suma achitată, aferentă tipului de pașaport solicitat.
+    
+    <br>&#x2022; Paşaportul anterior al minorului, dacă acesta există.
+    În situaţia în care cererea pentru eliberarea paşaportului simplu electronic este formulată de un singur părinte/reprezentant legal/persoana împuternicită, aceasta trebuie însoţită, după caz, şi de:
+    
+    <br>&#x2022; Procură specială prin care un părinte împuternicește celălalt părinte sau declaraţia privind acordul celuilalt părinte, în original, ori duplicat de pe actul original pentru procura specială şi declaraţia celuilalt părinte, autentificate şi eliberate începând cu data de 1 ianuarie 2013.
+    
+    <br>&#x2022; Procură specială, pentru cererile formulate de persoana împuternicită, în original, sau duplicat de pe actul original pentru procurile speciale autentificate şi eliberate începând cu data de 1 ianuarie 2013.
+    
+    <br>&#x2022; Hotărârea judecătorească de încredinţare a minorului, rămasă definitivă şi irevocabilă, ori hotărârea judecătorească în temeiul căreia părintele exercită singur autoritatea părintească, rămasă definitivă şi irevocabilă sau rămasă definitivă pentru procesele începute cu data de 15 februarie 2013, ori ordonanţa preşedinţială care cuprinde în mod expres faptul că părintele/reprezentantul legal în favoarea căruia s-a dispus exercitarea autorităţii părinteşti are dreptul de a solicita eliberarea paşaportului. Hotărârile judecătorești prezentate trebuie să cuprindă ștampila instanței, în original. Hotărârile pronunțate în străinătate trebuie să îndeplinească condițiile prevăzute de lege pentru recunoaștere și punere în executare.
+    
+    <br>&#x2022; Hotărâre judecătorească rămasă definitivă şi irevocabilă, hotărâre judecătorească rămasă definitivă pentru procesele începute cu data de 15 februarie 2013 ori ordonanţă preşedinţială, prin care instanţa a suplinit acordul celuilalt părinte pentru eliberarea paşaportului. Hotărârile judecătorești prezentate trebuie să cuprindă ștampila instanței, în original. Hotărârile pronunțate în străinătate trebuie să îndeplinească condițiile prevăzute de lege pentru recunoaștere și punere în executare.
+    
+    <br>&#x2022; Actul de desemnare a reprezentantului legal, numai pentru cererile formulate de acesta, în cazul minorilor care la data punerii sub interdicţie nu se află sub ocrotirea părinţilor.
+    
+    <br>&#x2022;  Act de deces al părintelui, pentru cererile formulate de părintele supravieţuitor ori pentru cele formulate de persoana împuternicită de acesta, în original.
+
+</div>
+
+
+<button class="accordion">Acte necesare pentru eliberarea pasaportului pentru minor cu varsta de peste 14 ani</button>
+<div class="panel" style="line-height: 2;">
+    
+    <br>&#x2022; Cartea de identitate sau, după caz, cartea de identitate provizorie a minorului, aflate în termen de valabilitate, în original.
+
+    <br>&#x2022; Certificatul de naştere al minorului, în original.
+    
+    <br>&#x2022; Declaraţii privind acordul de eliberare a paşaportului simplu electronic, date, după caz, de ambii părinţi/un singur părinte/părintele supraviețuitor/reprezentantul legal, în original sau duplicat de pe actul original, pentru declaraţiile autentificate şi eliberate începând cu data de 1 ianuarie 2013 (pentru minorii căsătoriţi în condiţiile legii, nu sunt necesare aceste declaraţii).
+    <br>&#x2022; Certificat de căsătorie al minorului căsătorit în condiţiile legii, în original.
+    
+    <br>&#x2022; Documentul care face dovada achitării contravalorii pașaportului, în original, sau documentul de plată/dovada tranzacției, editat(ă) pe suport hârtie sau în format electronic, care conține numărul tranzacției și datele persoanei pe numele căreia se solicită eliberarea documentului de călătorie (nume, prenume, CNP), precum și suma achitată, aferentă tipului de pașaport solicitat.
+    
+    <br>&#x2022; Paşaportul anterior al minorului, dacă acesta există.
+    În situaţia în care cererea este formulată cu acordul de eliberare a paşaportului simplu electronic dat de un singur părinte/părintele supraviețuitor/reprezentantul legal, aceasta trebuie însoţită, după caz, şi de:
+    
+    <br>&#x2022; Hotărârea judecătorească de încredințare a minorului, rămasă definitivă şi irevocabilă sau hotărârea judecătorească în temeiul căreia părintele exercită singur autoritatea părintească, rămasă definitivă şi irevocabilă sau rămasă definitivă pentru procesele începute cu data de 15 februarie 2013, ori ordonanţa preşedinţială care cuprinde în mod expres faptul că părintele are dreptul de a-şi da singur acordul pentru eliberarea paşaportului. Hotărârile judecătorești prezentate trebuie să cuprindă ștampila instanței, în original. Hotărârile pronunțate în străinătate trebuie să îndeplinească condițiile prevăzute de lege pentru recunoaștere și punere în executare.
+    
+    <br>&#x2022; Hotărârea judecătorească rămasă definitivă şi irevocabilă sau rămasă definitivă pentru procesele începute cu data de 15 februarie 2013 ori ordonanţa preşedinţială, prin care instanţa a suplinit acordul celuilalt părinte pentru eliberarea paşaportului. Hotărârile judecătorești prezentate trebuie să cuprindă ștampila instanței, în original. Hotărârile pronunțate în străinătate trebuie să îndeplinească condițiile prevăzute de lege pentru recunoaștere și punere în executare.
+    
+    <br>&#x2022; Actul de deces al celuilalt părinte, în original.
+    
+    <br>&#x2022; Actul de desemnare a reprezentantului legal.
+
+</div>
+
+<br><br>
+<footer class="footer">
+  <div class="container">
+   <div class="row">
+     <div class="footer-col">
+       <h4>Despre proiect</h4>
+       <ul>
+         <li><a href="#">Motivatie</a></li>
+         <li><a href="#">Echipa noastra</a></li>
+        
+       </ul>
+     </div>
+     <div class="footer-col">
+       <h4>Legal</h4>
+       <ul>
+         <li><a href="#">Termeni si conditii</a></li>
+         <li><a href="#">Confidentialitatea datelor</a></li>
+     
+       </ul>
+     </div>
+     
+     <div class="footer-col">
+       <h4>Social Media</h4>
+       <div class="social-links">
+         <a href="https://www.facebook.com/guv.ro/"><i class="fab fa-facebook-f"></i></a>
+        
+         <a href="https://www.instagram.com/guvern.ro/"><i class="fab fa-instagram"></i></a>
+         <a href="https://www.linkedin.com/company/guvernul-rom-niei/?originalSubdomain=ro"><i class="fab fa-linkedin-in"></i></a>
+       </div>
+     </div>
+   </div>
+  </div>
+</footer>
+
+
+   <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+
+</body>
+</html>

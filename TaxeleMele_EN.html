@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <!-- footer start  -->
+  <title>My taxes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+ <!-- footer end  -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navbar {
+  overflow: hidden;
+  
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover {
+  
+  /* border: 2px solid #84A6C9ff ;
+  border-radius: 18px; */
+  background-color: #f2f2f2;
+
+}
+
+.dropdown:hover .dropbtn{
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #84A6C9ff;
+  border:none;
+  border-radius: 0px;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.container_nav{
+    width: 100%;
+    min-height: 50vh;
+    padding: 0%;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+   
+
+}
+
+.hero-image3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/taxe2.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #84A6C9ff;
+  color: black;
+}
+/* footer start */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #051367;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: blue;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #5D8BF4;
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+/* footer end */
+</style>
+</head>
+<body style="background-color:white;">
+
+<div class="navbar">
+  <a href="rfid_EN.html">Talk to ION</a>
+  <a href="TaxeleMele.html">RO</a>
+  
+  <div class="dropdown">
+    <button class="dropbtn">I am a legal person
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Logare2_EN.html">Fiscal information</a>
+      <a href="CumSaJuridic_EN.html">How to ...</a>
+      <a href="GhidulTaxelorsiImpozitelor_EN.html">Guide to fees and taxes</a>
+    </div>
+  </div> 
+
+
+  <div class="dropdown">
+    <button class="dropbtn">I am a physical person 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Logare_EN.html">My Documents</a>
+      <a href="CumSaFizic_EN.html">How to ...</a>
+      <a href="TaxeleMele_EN.html">My taxes</a>
+      
+    </div>
+  </div> 
+</div>
+
+
+<div class="hero-image3">
+    <div class="hero-text">
+      <h1 style="font-size:50px">We know that paying taxes can be stressful at times...</h1>
+      <p>That's why we have prepared a complete list of fees. All can be paid online. </p>
+      <br>
+      <button><a href="https://www.ghiseul.ro/ghiseul/public/" style="text-decoration: none;color: black;">Go to Ghiseul.ro</a></button>
+      
+    </div>
+  </div>
+
+<br>
+<p style="margin:30px; line-height:2;">
+  <b>The most important fiscal obligations of Romanian citizens are:</b>
+<br>
+-income tax;
+  <br>- local taxes and fees (such as the tax on buildings, the tax and the tax on owned land or taxes on means of transport);
+  <br>- tax for advertising and publicity services, tax for display for the purpose of advertising and publicity, tax on shows, special tax for tourist promotion of the city of Bucharest;
+  <br>-other taxes and property taxes (agricultural tax, tax for concessioned land, stamp duties on successions and other stamp duties).
+  <br>
+  <br> <b>In Romania, income tax is paid by the following categories of taxpayers:</b>
+
+  <br>- resident natural persons;
+  <br>- non-resident natural persons carrying out an independent activity through a permanent establishment in Romania;
+  <br>- non-resident natural persons carrying out dependent activities in Romania;
+  <br>- non-resident natural persons who obtain income provided for in art. 129 of Law 227/2015 on the Fiscal Code with subsequent amendments and additions.
+
+ 
+  <br>
+  <br>
+<b>Taxable income categories</b>
+
+
+<br>Taxable income represents the category of income subject to taxation and includes both income in money and the equivalent in lei of income in kind. According to Law 227/2015 on the Fiscal Code with subsequent amendments and additions, these can be:
+<br>income from independent activities, defined according to art. 67;
+<br>income from wages and wages, defined according to art. 76;
+<br>income from the transfer of the use of goods, defined according to art. 83;
+<br>income from investments, defined according to art. 91;
+<br>income from pensions, defined according to art. 99;
+<br>income from agricultural activities, forestry and fish farming, defined according to art. 103;
+<br>income from prizes and games of chance, defined according to art. 108;
+<br>income from the transfer of real estate properties, defined according to art. 111;
+<br>income from other sources, defined according to art. 114 and art. 117.
+
+
+
+
+
+
+
+
+
+
+</p>
+<br>
+
+
+
+
+
+<footer class="footer">
+    <div class="container">
+     <div class="row">
+       <div class="footer-col">
+         <h4>About project</h4>
+         <ul>
+           <li><a href="#">Motivation</a></li>
+           <li><a href="#">Our team</a></li>
+          
+         </ul>
+       </div>
+       <div class="footer-col">
+         <h4>Legal</h4>
+         <ul>
+           <li><a href="#">Terms of service</a></li>
+           <li><a href="#">Data confidentiality</a></li>
+       
+         </ul>
+       </div>
+       
+       <div class="footer-col">
+         <h4>Social Media</h4>
+         <div class="social-links">
+           <a href="https://www.facebook.com/guv.ro/"><i class="fab fa-facebook-f"></i></a>
+          
+           <a href="https://www.instagram.com/guvern.ro/"><i class="fab fa-instagram"></i></a>
+           <a href="https://www.linkedin.com/company/guvernul-rom-niei/?originalSubdomain=ro"><i class="fab fa-linkedin-in"></i></a>
+         </div>
+       </div>
+     </div>
+    </div>
+ </footer>
+ 
+
+</body>
+</html>
